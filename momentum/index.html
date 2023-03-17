@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="assets/favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="css/owfont-regular.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>momentum</title>
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="player">
+			<div class="player-controls">
+				<button class="play-prev player-icon"></button>
+				<button class="play player-icon"></button>
+				<button class="play-next player-icon"></button>
+			</div>
+			<div class="volume">
+				<div class="speeker"></div>
+				<input id="range" min="0" max="100" value="100" type="range">
+			</div>
+			<div class="bar">
+				<div class="track">
+					<p class="track__name"></p>
+					<p class="track__time"></p>
+				</div class='PB'>
+				<progress value="0" max="100"></progress>
+			</div>
+			<ul class="play-list"></ul>
+		</div>
+		<div class="todo">
+			<div class="todo__input">
+				<form class="todo__I" onsubmit=";return false">
+					<input type="text" class="todo__text" valie="" />
+					<div class="todo__add"></div>
+				</form>
+				<div class="todo__select">
+					<div class="todo__active isPaly"></div>
+					<div class="todo__done"></div>
+				</div>
+			</div>
+			<div class="todo__items">
+			</div>
+		</div>
+		<div class="weather">
+			<input type="text" value="" class="city" />
+			<i class="weather-icon owf"></i>
+			<div class="weather-error"></div>
+			<div class="description-container">
+				<span class="temperature"></span>
+				<span class="weather-description"></span>
+			</div>
+			<div class="wind"></div>
+			<div class="humidity"></div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="slider-icons">
+			<button class="slide-prev slider-icon"></button>
+			<button class="slide-next slider-icon"></button>
+		</div>
+		<time class="time"></time>
+		<date class="date"></date>
+		<div class="greeting-container">
+			<span class="greeting"></span>
+			<input type="text" class="name" placeholder="" />
+		</div>
+	</main>
+	<footer class="footer">
+		<button class="change-quote"></button>
+		<div>
+			<div class="quote"></div>
+			<div class="author"></div>
+		</div>
+		<div class="media">
+			<a href="https://rs.school/js/" target="_blank">
+				<div class="RSS"></div>
+			</a>
+			<a href="https://github.com/amdreimash" target="_blank">
+				<div class="GH"></div>
+			</a>
+		</div>
+	</footer>
+	<div class="satings__ico"></div>
+	<div class="setings">
+		<form class='setungs__form' onsubmit=";return false" name="settings">
+			<p class="setings__lable"></p>
+			<select id="Language">
+				<option selected value="EN">English</option>
+				<option value="RU">Русский</option>
+			</select>
+			<p class="setings__lable"></p>
+			<select id="Sources">
+				<option selected value="git">git</option>
+				<option value="FlickrAPI">FlickrAPI</option>
+				<option value="UnsplashAPI">UnsplashAPI</option>
+			</select>
+			<input checked type="text" class="setings__bgTag" name='tag' placeholder="">
+			<p class="error"></p>
+			<label>
+				<p class="setings__lable"></p>
+				<input checked legend="Плеер" class="hiden" type="checkbox" name="Player" id="">
+			</label>
+			<label>
+				<p class="setings__lable"></p>
+				<input checked class="hiden" type="checkbox" name="Todo" id="">
+			</label>
+			<label>
+				<p class="setings__lable"></p>
+				<input checked class="hiden" type="checkbox" name="Weather" id="">
+			</label>
+			<label>
+				<p class="setings__lable"></p>
+				<input checked class="hiden" type="checkbox" name="Time" id="">
+			</label>
+			<label>
+				<p class="setings__lable"></p>
+				<input checked class="hiden" type="checkbox" name="Greeting" id="">
+			</label>
+			<label>
+				<p class="setings__lable"></p>
+				<input checked class="hiden" type="checkbox" name="Quotes" id="">
+			</label>
+			<!--<div class="qwer"></div>
+			<button class="submit">Set</button>
+		</form>-->
+	</div>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
